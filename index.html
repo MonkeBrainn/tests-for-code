@@ -108,13 +108,11 @@
       } else if (clickCount === 2) {
         messageDiv.innerHTML = "Are you really, really, really sure?";
       } else if (clickCount === 3) {
-        // Final stage: display ring image and marriage certificate
+        // Final stage: only display the ring image
         var container = document.querySelector(".container");
         container.innerHTML = `
           <h1>We're Married!</h1>
           <img src="ring.png" alt="Ring" style="width:150px; margin-bottom:20px;">
-          <br>
-          <img src="certificate.png" alt="Marriage Certificate" style="width:300px;">
         `;
       }
     }
